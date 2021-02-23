@@ -19,7 +19,9 @@ The purpose of this analysis is to examine the NCSBE voter data to come to a con
 
 1. How did demographic subgroups vote in 2016? For example, how did the turnout for males compare to the turnout for females after controlling for other potential predictors?
 
-2. Did the overall probability or odds of voting differ by county in 2016? 3. How did the turnout rates differ between females and males for the different party affiliations?
+2. Did the overall probability or odds of voting differ by county in 2016?  
+
+3. How did the turnout rates differ between females and males for the different party affiliations?
 
 ### Data Pre-processing
 The two datasets used in this analysis were the 2016 voter history data and 2016 voter registration data. To prepare for the analysis of voting habits by demographic group the two datasets were grouped by county, age group, ethnicity, race, party, and gender (each row having a unique combination of the variables) and aggregated the number of actual voters or registered voters for the respective dataset. To effectively join the two datasets along all the variable columns we first needed to ensure that the levels for the factor variables for each dataset were consistent. Invalid voter groups levels that did not match, like the age group below 18 years from the voting records dataset were removed. Missing values were also removed from the dataset as any methods to impute the missing values did not seem feasible. Also, the two datasets have a relatively small number of predictor variables compared to a very large number of observations that we were not concerned about the degree of information loss resulting from omitting observations with missing values.
